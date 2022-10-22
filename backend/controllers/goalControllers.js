@@ -4,7 +4,7 @@ const Goal = require('../models/goalModel')
 
 /**
  * @desc    Get goals
- * @param   GET /api/goals
+ * @route   GET /api/goals
  * @access  Private 
  */
 const getGoals = asyncHandler(async (req, res) =>{
@@ -16,7 +16,7 @@ const getGoals = asyncHandler(async (req, res) =>{
 
 /**
  * @desc    Set goal
- * @param   POST /api/goals/:id
+ * @route   POST /api/goals/:id
  * @access  Private 
  */
 const setGoal = asyncHandler(async (req, res) => {
@@ -35,7 +35,7 @@ const setGoal = asyncHandler(async (req, res) => {
 
 /**
  * @desc    Update goal
- * @param   POST /api/goals/:id
+ * @route   POST /api/goals/:id
  * @access  Private 
  */
 const updateGoal = asyncHandler(async (req, res) =>{
@@ -55,7 +55,7 @@ const updateGoal = asyncHandler(async (req, res) =>{
 
 /**
  * @desc    Delete goal
- * @param   POST /api/goals/:id
+ * @route   POST /api/goals/:id
  * @access  Private 
  */
 const deleteGoal = asyncHandler(async (req, res) => {
